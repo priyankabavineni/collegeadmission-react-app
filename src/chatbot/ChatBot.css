@@ -1,73 +1,63 @@
-/* ChatBubble.css */
-
-.chatbubble-container {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
+.chatbot-container {
+  border: 1px solid #ccc;
+  width: 300px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  background-color: #fefefe;
 }
 
-.chatbubble-bubble {
-  position: relative;
-  background-color: #fff;
-  padding: 12px 16px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 220px;
-  font-family: Arial, sans-serif;
-  font-size: 13px;
-  color: #333;
-  user-select: none;
-}
-
-.chatbubble-close-btn {
-  position: absolute;
-  top: 6px;
-  right: 10px;
-  border: none;
-  background: transparent;
-  font-size: 16px;
-  cursor: pointer;
-  color: #aaa;
-}
-
-.chatbot-greeting {
+.chatbot-header {
+  background-color: #0051a2;
+  color: white;
+  padding: 10px;
   font-weight: bold;
-  margin-bottom: 6px;
+  text-align: center;
+}
+
+.chatbot-chat-window {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatbot-message {
+  margin-bottom: 10px;
+  max-width: 80%;
+  padding: 8px 12px;
+  border-radius: 15px;
   font-size: 14px;
+}
+
+.user {
+  align-self: flex-end;
+  background-color: #d1e7dd;
+}
+
+.bot {
+  align-self: flex-start;
+  background-color: #e2e3e5;
 }
 
 .chatbot-input-group {
   display: flex;
-  gap: 6px;
-  margin-bottom: 6px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
 }
 
-.chatbot-input {
+.chatbot-input-group input {
   flex-grow: 1;
-  font-size: 13px;
-  padding: 5px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 14px;
 }
 
-.chatbot-button {
-  padding: 5px 10px;
-  font-size: 13px;
-  border-radius: 4px;
-  cursor: pointer;
-  background-color: #1976d2;
+.chatbot-input-group button {
+  padding: 8px 12px;
+  background-color: #0051a2;
   color: white;
   border: none;
-}
-
-.chatbot-response-label {
-  font-weight: bold;
-  font-size: 13px;
-}
-
-.chatbot-response-text {
-  font-size: 13px;
-  min-height: 20px;
-  white-space: pre-wrap;
+  cursor: pointer;
 }

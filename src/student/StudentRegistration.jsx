@@ -23,7 +23,6 @@ export default function StudentRegistration() {
     try {
       const res = await axios.post('http://localhost:8080/api/student/register', student);
 
-      // Auto-login after successful registration
       const loginRes = await axios.post(
         `http://localhost:8080/api/student/login?email=${student.email}&password=${student.password}`
       );
@@ -37,7 +36,7 @@ export default function StudentRegistration() {
 
   return (
     <Container className="mt-5" style={{ maxWidth: '500px' }}>
-      <h2 className="mb-4 text-center">🎓 Student Registration</h2>
+      <h2 className="mb-4 text-center"> Student Registration</h2>
       {errorMsg && <Alert variant="danger">{errorMsg}</Alert>}
       <Form>
         <Form.Group className="mb-3">

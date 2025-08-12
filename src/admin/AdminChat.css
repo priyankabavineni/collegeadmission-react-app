@@ -1,0 +1,11 @@
+.container {
+  max-width: 500px; /* same as table max-width */
+  margin: 20px auto; /* center horizontally and add vertical spacing */
+  text-align: center; /* center the heading text */
+}
+
+.heading {
+  font-size: 20px;
+  margin-bottom: 10px;
+  background-color:blue;
+}

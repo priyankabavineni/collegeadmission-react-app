@@ -1,0 +1,61 @@
+/* admin/AdminLogin.css */
+
+.admin-login-wrapper {
+  background: #f4f6f8;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+.admin-login-container {
+  max-width: 400px;
+  width: 100%;
+  background-color: #2a3eb1;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.admin-login-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.admin-login-container .form-label {
+  font-weight: 500;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.admin-login-container .form-control {
+  border-radius: 10px;
+  background-color: white;
+  color: #003333;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.admin-login-btn {
+  background-color: whitesmoke;
+  border: none;
+  color: #003333;
+  font-weight: bold;
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.admin-login-btn:hover {
+  background-color: #2a3eb1;
+  color: white;
+}

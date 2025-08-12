@@ -1,0 +1,402 @@
+/* =========================== */
+/* Global Font and Body Setup */
+/* =========================== */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #0a1c54;
+}
+
+
+/* ===================== */
+/* Dropdown Filter Style */
+/* ===================== */
+
+select {
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 2px solid #2a3eb1;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #0a1c54;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 280px;
+  box-shadow: 0 3px 8px rgba(42, 62, 177, 0.1);
+  transition: 0.3s ease;
+}
+
+select:focus {
+  outline: none;
+  border-color: #0a1c54;
+  box-shadow: 0 0 8px rgba(10, 28, 84, 0.4);
+}
+
+label {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-right: 10px;
+}
+
+
+/* ================== */
+/* Table Container */
+/* ================== */
+
+.application-content {
+  margin-top: 20px;
+  overflow-x: auto;
+  padding-bottom: 30px;
+}
+
+
+/* ======================= */
+/* Table Style for All Views */
+/* ======================= */
+
+.application-content table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(10, 28, 84, 0.12);
+  margin-top: 10px;
+}
+
+.application-content th,
+.application-content td {
+  padding: 14px 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.application-content thead {
+  background-color: #2a3eb1;
+  color: white;
+}
+
+.application-content tbody tr:nth-child(even) {
+  background-color: #f2f4ff;
+}
+
+.application-content tbody tr:hover {
+  background-color: #e4e9ff;
+  transition: 0.2s ease-in-out;
+}
+
+
+/* ==================== */
+/* Approve/Reject Buttons */
+/* ==================== */
+
+.application-content button {
+  padding: 6px 14px;
+  margin: 0 4px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 2px solid #2a3eb1;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.application-content button:hover {
+  background-color: #2a3eb1;
+  color: white;
+}
+
+/* Green approve button */
+.approve-btn {
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.approve-btn:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Red reject button */
+.reject-btn {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.reject-btn:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+
+/* ====================== */
+/* Page & Section Titles  */
+/* ====================== */
+
+.dashboard-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  color: #0a1c54;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(42, 62, 177, 0.3);
+}
+
+
+/* ================== */
+/* Responsive Design  */
+/* ================== */
+
+@media (max-width: 768px) {
+  .application-content table {
+    font-size: 0.85rem;
+  }
+
+  .application-content th,
+  .application-content td {
+    padding: 10px;
+  }
+
+  select {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .application-content button {
+    margin: 4px 2px;
+  }
+}
+/* Centering the form section */
+.form-center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-centered {
+  max-width: 400px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(10, 28, 84, 0.12);
+}
+/* Center wrapper */
+.form-center-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Inside wrapper - horizontally aligned with gap */
+.program-department-form {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Table styling - reuse for consistency */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.95rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.styled-table th,
+.styled-table td {
+  border: 1px solid #e3e3e3;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.styled-table th {
+  background-color: #0a1c54;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f4f6f8;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #dce3f2;
+}
+
+button {
+  background-color: #2a3eb1;
+  color: white;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #0a1c54;
+}
+/* Overlay with blur */
+.glass-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 28, 84, 0.25);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in;
+}
+
+/* Modal box with glassmorphism */
+.glass-modal {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(10, 28, 84, 0.25);
+  width: 95%;
+  max-width: 480px;
+  padding: 25px 30px;
+  color: #fff;
+  position: relative;
+  animation: slideUp 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Header */
+.glass-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.glass-header h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+}
+
+.glass-close {
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.glass-close:hover {
+  color: #ff4d4f;
+}
+
+/* Body */
+.glass-body label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #fff;
+}
+
+.glass-textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  resize: none;
+  font-size: 1rem;
+  font-family: inherit;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+  margin-top: 6px;
+  transition: 0.3s ease;
+}
+
+.glass-textarea:focus {
+  box-shadow: 0 0 8px #0a1c54;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Error box */
+.glass-error {
+  background-color: rgba(255, 0, 0, 0.1);
+  border-left: 4px solid red;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #ffdddd;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+/* Footer buttons */
+.glass-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.glass-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.glass-btn.cancel {
+  background: #ffffff;
+  color: #0a1c54;
+}
+
+.glass-btn.cancel:hover {
+  background: #dcdcdc;
+}
+
+.glass-btn.submit {
+  background: linear-gradient(135deg, #2a3eb1, #0a1c54);
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(42, 62, 177, 0.6);
+}
+
+.glass-btn.submit:hover {
+  background: linear-gradient(135deg, #0a1c54, #2a3eb1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

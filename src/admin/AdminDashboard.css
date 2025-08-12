@@ -1,0 +1,148 @@
+/* AdminDashboard.css */
+
+.dashboard-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #0a1c54;
+  text-shadow: 0 2px 4px rgb(42 62 177 / 0.3);
+}
+
+.button-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 45px;
+  flex-wrap: wrap;
+}
+
+.dashboard-button {
+  background: linear-gradient(135deg, #2a3eb1 0%, #0a1c54 100%);
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgb(42 62 177 / 0.5);
+  transition: background 0.4s ease, box-shadow 0.3s ease;
+  user-select: none;
+  min-width: 160px;
+  text-align: center;
+}
+
+.dashboard-button:hover,
+.dashboard-button:focus {
+  background: linear-gradient(135deg, #0a1c54 0%, #2a3eb1 100%);
+  box-shadow: 0 8px 22px rgb(42 62 177 / 0.7);
+  outline: none;
+}
+
+.back-button-container {
+  margin-bottom: 25px;
+}
+
+.back-button {
+  background: transparent;
+  border: 2px solid #2a3eb1;
+  color: #2a3eb1;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  user-select: none;
+}
+
+.back-button:hover,
+.back-button:focus {
+  background-color: #2a3eb1;
+  color: white;
+  outline: none;
+}
+
+label {
+  font-weight: 600;
+  color: #0a1c54;
+  font-size: 1.1rem;
+}
+
+select {
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 2px solid #2a3eb1;
+  border-radius: 8px;
+  min-width: 260px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  color: #0a1c54;
+  font-weight: 600;
+  user-select: none;
+}
+
+select:focus {
+  outline: none;
+  border-color: #0a1c54;
+  box-shadow: 0 0 8px rgb(10 28 84 / 0.6);
+  background-color: white;
+}
+.application-content {
+  padding: 20px 0;
+  font-size: 1rem;
+  color: #222;
+}
+
+
+/* Chatbot placeholder styling */
+.dashboard-container > div p {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .button-grid {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .dashboard-button {
+    width: 100%;
+    min-width: unset;
+  }
+
+  select {
+    min-width: 100%;
+  }
+}
+/* Add this to your AdminDashboard.css or modify existing */
+/* Make the whole page full height and center content */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Wrapper just for centering */
+.dashboard-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f6f8; /* same as ticker */
+}
+
+/* NO CARD: No background, no border, no padding, no shadow */
+.dashboard-container {
+  width: 100%;
+  max-width: 1000px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0a1c54;
+  text-align: center;
+  margin: 0 auto;
+}

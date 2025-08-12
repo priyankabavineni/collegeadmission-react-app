@@ -1,0 +1,101 @@
+/* General Reset */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Hero Section */
+.aboutus-hero {
+  background: linear-gradient(rgba(44, 78, 220, 0.7), rgba(44, 78, 220, 0.7)),
+    url('/assets/about-college.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+/* Main Content */
+.aboutus-main {
+  background-color: #ffffff;
+  padding: 3rem 1rem;
+}
+
+.aboutus-content h2 {
+  color: #2C4EDC;
+  margin-bottom: 1rem;
+}
+
+.aboutus-content h3 {
+  color: #1f3bb3;
+  margin-top: 1.5rem;
+}
+
+.aboutus-content ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+/* Image Section */
+.image {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.image-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f4f6f8;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* CTA Section */
+.aboutus-cta {
+  background-color: #2C4EDC;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.aboutus-cta .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: white;
+  color: #2C4EDC;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.aboutus-cta .btn:hover {
+  background-color: #d9e1ff;
+}

@@ -1,0 +1,731 @@
+/* Hero Section Container */
+.hero-section {
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+/* Top part: title and contact info */
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.hero-top h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  flex: 1 1 auto;
+}
+
+.contact-info {
+  flex: 0 1 auto;
+  text-align: right;
+  min-width: 250px;
+  color: #a00; /* Dark red */
+  font-weight: 600;
+}
+
+.contact-info p {
+  margin: 0.2rem 0;
+}
+
+/* Scrolling image marquee container */
+.image-marquee {
+  overflow: hidden;
+  width: 100%;
+  margin: 1rem 0;
+  position: relative;
+}
+
+/* Track that moves left to right */
+.image-track {
+  display: flex;
+  width: calc(320px * 8 + 1rem * 8); /* 8 images + 8 gaps */
+  animation: scroll-left 20s linear infinite;
+}
+
+/* Each image style */
+.image-track img {
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Hover effect on images */
+.image-track img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(214, 51, 108, 0.5);
+  z-index: 2; /* Bring hovered image forward */
+}
+
+/* Scroll animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(- (320px * 4 + 1rem * 4) )); /* Scroll width of 4 images + gaps */
+  }
+}
+
+/* Apply button container */
+.apply-button-wrapper {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+/* Styled apply button */
+.apply-btn {
+  background: linear-gradient(135deg, #3c00c7);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 0.8rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(214, 51, 108, 0.4);
+  transition: all 0.3s ease;
+  letter-spacing: 1.2px;
+}
+
+.apply-btn:hover {
+  background: linear-gradient(135deg,#3c00c7);
+  box-shadow: 0 8px 20px rgba(142, 94, 255, 0.6);
+  transform: scale(1.05);
+}
+.image-marquee {
+  overflow: hidden;
+  width: 100%;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.image-track {
+  display: flex;
+  width: calc(320px * 8); /* 4 images * 2 duplicates = 8 images */
+  animation: scroll-left 20s linear infinite;
+}
+
+.image-track img {
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.image-track img:hover {
+  transform: scale(1.05);
+  z-index: 2; /* make hovered image stand out */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-320px * 4 - 1rem * 4)); /* width of original 4 images + gap */
+  }
+}
+
+
+/* Admission Information Section */
+.info-wrapper {
+  max-width: 1100px;
+  margin: 2rem auto;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.info-text {
+  flex: 1 1 450px;
+}
+
+.info-image {
+  flex: 1 1 300px;
+}
+
+.admission-img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.info-block h3 {
+  margin-top: 1.5rem;
+  font-weight: 700;
+  color: #3c00c7;
+}
+
+.info-text ol {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  color: #222;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* How to Apply Section */
+.how-to-apply {
+  background-color: #eee;
+  padding: 3rem 1rem 4rem;
+  text-align: center;
+  max-width: 1100px;
+  margin: 3rem auto 0;
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.how-to-apply h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #3c00c7;
+  margin-bottom: 0.3rem;
+}
+
+.how-to-apply .subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.step {
+  flex: 1;
+  max-width: 180px;
+  background: white;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  width: 50px;
+  height: 2px;
+  background-color: #aaa;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.step:last-child::after {
+  display: none;
+}
+
+.icon-circle {
+  background: white;
+  border-radius: 50%;
+  padding: 15px;
+  margin-bottom: 12px;
+  box-shadow: 0 0 8px rgba(208, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.step-title {
+  font-weight: 600;
+  margin: 0 0 6px 0;
+}
+
+.step-text {
+  font-size: 0.9rem;
+  color: #222;
+  line-height: 1.3;
+  white-space: pre-line;
+}
+
+/* Responsive for How to Apply */
+@media (max-width: 768px) {
+  .steps-container {
+    flex-direction: column;
+    max-width: 350px;
+  }
+
+  .step {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .step:not(:last-child)::after {
+    display: none;
+  }
+}
+
+/* Programs Offered Section */
+.programs-offered {
+  max-width: 1100px;
+  margin: 3rem auto 4rem;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.programs-offered h2 {
+  font-size: 2.4rem;
+  color: #3c00c7;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.programs-description {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Campus Tabs */
+.campus-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.campus-tabs button {
+  background-color: #eee;
+  border: 2px solid #3c00c7;
+  color: #3c00c7;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1rem;
+}
+
+.campus-tabs button.active,
+.campus-tabs button:hover {
+  background-color: #3c00c7;
+  color: white;
+}
+
+/* Discipline Tags */
+.discipline-tags {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.discipline-tags span {
+  background-color: #f5f5f5;
+  color: #555;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  user-select: none;
+  border: 1px solid #ddd;
+}
+
+/* Program Lists */
+.program-lists {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.program-list {
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  flex: 1 1 280px;
+  min-width: 280px;
+  text-align: left;
+}
+
+.program-list h3 {
+  color: #3c00c7;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.program-list ul {
+  list-style-type: disc;
+  padding-left: 1.4rem;
+  color: #222;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.program-list ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Programs Offered */
+@media (max-width: 900px) {
+  .program-lists {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program-list {
+    min-width: 100%;
+    max-width: 500px;
+    margin-bottom: 2rem;
+  }
+}
+/* Entrance Exam Section */
+.exam-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.exam-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3c00c7;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Tab Buttons */
+.exam-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  gap: 0.5rem;
+}
+
+.tab-button {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: #eee;
+}
+
+.tab-button.active {
+  background-color: #3c00c7;
+  color: white;
+  border-color: #3c00c7;
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Tables */
+.exam-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.exam-section th {
+  background-color: #3c00c7;
+  color: white;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.exam-section td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.exam-section tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.exam-section tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Add this to the parent container if not already styled */
+#tab-eligibility-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Adjust the eligibility tab box */
+#tab-eligibility {
+  max-width: 700px; /* Or any preferred width */
+  width: 100%;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  text-align: left; /* Keep text readable */
+}
+
+/* Headings */
+#tab-eligibility h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3c00c7;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Lists */
+#tab-eligibility ul {
+  margin-left: 1.5rem;
+  padding-left: 0.5rem;
+  list-style-type: disc;
+}
+
+#tab-eligibility li {
+  margin-bottom: 0.4rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* First heading margin fix */
+#tab-eligibility h3:first-child {
+  margin-top: 0;
+}
+
+/* Smooth fade effect */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.recruiters-scroll {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+}
+
+.recruiters-title {
+  font-size: 2rem;
+  color: #3c00c7;
+  font-weight: bold;
+}
+
+.recruiters-description {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.5rem 0 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logo-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLogos 20s linear infinite;
+}
+
+.logo-track img {
+  height: 80px;
+  width: auto;
+  margin: 0 1.5rem;
+  object-fit: contain;
+}
+
+@keyframes scrollLogos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.life-scroll {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #fff;
+}
+
+.life-title {
+  font-size: 2rem;
+  color: #3c00c7;
+  font-weight: bold;
+}
+
+.life-description {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.5rem 0 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.life-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.life-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLife 25s linear infinite;
+}
+
+.life-track img {
+  height: 300px;
+  width: auto;
+  margin: 0 1rem;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation */
+@keyframes scrollLife {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.helpdesk-section {
+  background-color: #f9f9f9;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+}
+
+.helpdesk-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.helpdesk-text {
+  flex: 1 1 400px;
+}
+
+.helpdesk-text h3 {
+  color: #3c00c7;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.helpdesk-text h4 {
+  color: #3c00c7;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.helpdesk-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0.3rem 0;
+}
+
+.enquire-btn {
+  margin-top: 1rem;
+  background-color: #3c00c7;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.enquire-btn:hover {
+  background-color: #900000;
+}
+
+hr {
+  margin: 1.5rem 0;
+  border: 0.5px solid #ddd;
+}
+
+.helpdesk-image {
+  flex: 1 1 280px;
+  text-align: right;
+}
+
+.helpdesk-image img {
+  width: 280px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .helpdesk-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .helpdesk-image {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+.site-footer {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color:black; /* brown-red shade */
+  background-color: #fff; /* white background */
+  border-top: 1px solid black; /* subtle brown border */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

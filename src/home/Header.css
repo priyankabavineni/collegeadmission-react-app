@@ -1,0 +1,41 @@
+.top-navbar {
+  background-color: #0a1c54; /* Dark Blue */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  align-items: center;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.right-buttons .btn {
+  background-color: #2a3eb1; /* Changed to blue for consistency */
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.right-buttons .btn:hover {
+  opacity: 0.85;
+}
+
+.ticker {
+  background-color: #f4f6f8;
+  color: #0a1c54;
+  padding: 0.4rem 2rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+marquee {
+  white-space: nowrap;
+}

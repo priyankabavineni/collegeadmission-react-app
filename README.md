@@ -1,12 +1,12 @@
-# React + Vite
+The Student Module is created to make the admission process easy and smooth for students. First, students need to register by filling in their personal and academic information. Once they successfully register, they are automatically taken to the program application page where they can apply for the course or program they want. This quick step avoids extra clicking around and makes the process more user-friendly.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+After applying, students can log in to a secure portal anytime to check the progress of their application. They can see updates on different stages such as when their application is received, being reviewed, approved, or if more information is needed. This keeps students informed and saves them from having to contact the admissions office repeatedly.
 
-Currently, two official plugins are available:
+The Student Module brings together registration, application, and status checking in one easy flow. This helps students manage their admissions smoothly and allows the college to handle applications in an organized way.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+URL'S:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+http://localhost:5173/register after registration it will be redirected to the below link
+http://localhost:5173/application
+http://localhost:5173/login
+http://localhost:5173/status(for checking their status using email)

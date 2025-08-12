@@ -1,0 +1,16 @@
+----------------------------------------------------------------
+Thu Aug 07 16:31:30 IST 2025:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046): instance a816c00e-0198-8431-6de3-000001750d60 
+on database directory memory:C:\Users\coforge\Downloads\college-admission-master\college-admission-master\c0325d49-3bbb-4d4c-9ac1-6c5ffc41cda2 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@5c647e05 
+Loaded from file:/C:/Users/coforge/.m2/repository/org/apache/derby/derby/10.16.1.1/derby-10.16.1.1.jar
+java.vendor=Eclipse Adoptium
+java.runtime.version=21.0.7+6-LTS
+user.dir=C:\Users\coforge\Downloads\college-admission-master\college-admission-master
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Aug 07 16:32:39 IST 2025:
+Shutting down instance a816c00e-0198-8431-6de3-000001750d60 on database directory memory:C:\Users\coforge\Downloads\college-admission-master\college-admission-master\c0325d49-3bbb-4d4c-9ac1-6c5ffc41cda2 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@5c647e05 
